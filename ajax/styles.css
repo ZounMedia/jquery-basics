@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #333;
+  background-color: #f9f9f9;
+}
+
+#fetchData {
+  background-color: #ffd700;
+}
+
+#userAuthentication {
+  background-color: #98fb98;
+}
+
+#formSubmission {
+  background-color: #87cefa;
+}
+
+#autoSuggestions {
+  background-color: #ffcccb;
+}
