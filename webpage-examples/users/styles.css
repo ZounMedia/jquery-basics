@@ -1,0 +1,23 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.user-card {
+  margin-top: 10px;
+}
+
+.user-card .card:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+  color: black;
+}
