@@ -1,6 +1,6 @@
-# jQuery Basics
+# jQuery AJAX Basics
 
-A repo created to teach the baics of jQuery
+A repo created to teach the baics of jQuery and AJAX
 
 ## jQuery Overview
 
@@ -14,7 +14,7 @@ Key jQuery features
 - Animation and Effects: Query provides methods for animations and effects, making it easy to create smooth animations and transitions on web pages.
 - Chaining: jQuery allows you to chain multiple methods together, enhancing readability and conciseness of your code.
 
-## Accessing DOM Elements
+### Accessing DOM Elements
 
 jQuery enables us to access DOM elements with easy-to-use and simple syntax.
 
@@ -84,7 +84,7 @@ $("p:last").text("Last paragraph modified using jQuery!");
 
 These codes select the first and last <p> elements and change their text content using the text() method.
 
-## Manipulating DOM Elements
+### Manipulating DOM Elements
 
 **Changing Content:**
 
@@ -153,3 +153,9 @@ $(".clickable").click(function () {
 ```
 
 This code adds a click event handler to elements with class "clickable" using the click() method. When any element with this class is clicked, it shows an alert.
+
+## AJAX Overview
+
+jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, and animation much simpler with an easy-to-use API that works across a multitude of browsers.
+
+---
