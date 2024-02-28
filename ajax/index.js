@@ -1,11 +1,16 @@
 $(document).ready(function () {
   // Fetching Data
   $.ajax({
-    url: "https://jsonplaceholder.typicode.com/posts/1",
+    url: "https://jsonplaceholder.typicode.com/posts/5",
     method: "GET",
     success: function (data) {
       //updating the DOM to display the data
+      console.log("data from request: ", { data });
       $("#data").html("<strong>Title:</strong> " + data.title);
+    },
+    error: function (error) {
+      //updating the DOM to display the data
+      console.log("Error from request: ", { error });
     },
   });
 
