@@ -1,6 +1,6 @@
 // Method 1: Changing Content
 let contentChange = $("#contentChange");
-console.log({ contentChange });
+// console.log({ contentChange });
 contentChange.text("Content changed using jQuery!");
 
 // Method 2: Changing HTML
@@ -10,8 +10,10 @@ htmlChange.html("HTML content <strong>changed</strong> using jQuery!");
 
 // Method 3: Changing Attributes
 let attributeChange = $("#attributeChange");
+console.log({ attributeChange });
 attributeChange.attr("src", "assets/img/dog.jpeg");
 attributeChange.attr("alt", "Dog");
+console.log({ attributeChange });
 
 // Method 4: Changing CSS Properties
 let cssChange = $(".cssChange");

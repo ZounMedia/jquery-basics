@@ -1,6 +1,7 @@
 // Method 1: Accessing Elements by ID
+// const element = document.getElementById("myElement"); // Vanilla JS
 let myElement = $("#myElement");
-// console.log({myElement})
+console.log({ myElement });
 myElement.text("Element accessed by ID using jQuery!");
 
 // Method 2: Accessing Elements by Class
