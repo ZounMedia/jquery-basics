@@ -92,7 +92,7 @@ let myCounters = createCounters();
  * By using an immediately invoked function expression (IIFE), the current value of i is passed to x and captured in a closure, ensuring each function remembers its specific value.
  */
 
-//5. Closures in Loops
+//5.  Advanced Closure Example: Private Variables
 /**
  * Closures can be used to create private letiables that can only be accessed or modified by specific functions
  */
