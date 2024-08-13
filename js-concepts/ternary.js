@@ -22,8 +22,8 @@ function checkEvenOdd(number) {
   return number % 2 === 0 ? "Even" : "Odd";
 }
 
-console.log(checkEvenOdd(10)); // Output: "Even"
-console.log(checkEvenOdd(7)); // Output: "Odd"
+// console.log(checkEvenOdd(10)); // Output: "Even"
+// console.log(checkEvenOdd(7)); // Output: "Odd"
 
 // Explanation:
 // The condition "number % 2 === 0" checks if the number is even.
@@ -33,7 +33,7 @@ console.log(checkEvenOdd(7)); // Output: "Odd"
 let score = 85;
 let grade = score >= 90 ? "A" : score >= 80 ? "B" : "C";
 
-console.log(grade); // Output: "B"
+// console.log(grade); // Output: "B"
 
 // Explanation:
 // The first condition "score >= 90" is checked.
@@ -52,7 +52,7 @@ let performance =
     ? "Average"
     : "Poor";
 
-console.log(performance); // Output: "Average"
+// console.log(performance); // Output: "Average"
 
 // Explanation:
 // The condition "score2 >= 90" is checked first.

@@ -15,12 +15,12 @@ If you declare a variable outside any function or block, it's in the global scop
 let globalVar = "I'm a global variable";
 
 function showGlobalVar() {
-  console.log("globalVar log within function: ", globalVar); // Accessible here
+  console.log("globalVar log in function: ", globalVar); // Accessible here
 }
 
 showGlobalVar(); // Output: "I'm a global variable"
 
-console.log("globalVar log called in the global scope: ", globalVar); // Accessible here too
+// console.log("globalVar log called in the global scope: ", globalVar); // Accessible here too
 
 //Explanation: globalVar is declared outside any function, so it's globally scoped and accessible from anywhere in the code.
 
@@ -33,7 +33,7 @@ function showLocalVar() {
   console.log("localVar called with function:", localVar); // Accessible here
 }
 
-showLocalVar(); // Output: "I'm a local variable"
+// showLocalVar(); // Output: "I'm a local variable"
 
 // console.log(localVar); // Error: localVar is not defined
 
@@ -57,6 +57,6 @@ function checkBlockScope() {
   console.log(blockScopedVar); // Error: blockScopedVar is not defined
 }
 
-checkBlockScope();
+// checkBlockScope();
 
 /** Explanation: blockScopedVar is declared inside an if block using let, so it's only accessible within that block. Trying to access it outside the block causes an error. */

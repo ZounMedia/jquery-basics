@@ -1,7 +1,7 @@
 //Understanding Closures in JavaScript
 
 /**
- * A closure in JavaScript is a feature where an inner function has access to the outer (enclosing) function’s letiables, even after the outer function has finished executing.
+ * A closure in JavaScript is a feature where an inner function has access to the outer (enclosing) function’s variables, even after the outer function has finished executing.
  * Closures allow functions to "remember" the environment in which they were created.
  */
 
