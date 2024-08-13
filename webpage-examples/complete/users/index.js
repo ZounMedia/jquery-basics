@@ -55,8 +55,8 @@ $(document).ready(function () {
                             </div>
                             </a>
                         </div>`;
-        //appending the user card to the UI
 
+        //appending the user card to the UI
         $("#user-cards").append(userCard);
       });
     },
