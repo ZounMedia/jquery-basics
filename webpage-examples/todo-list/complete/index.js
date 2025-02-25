@@ -33,7 +33,8 @@ $(document).ready(function () {
   render();
 
   // Add a new to-do
-  $("#addTodo").click(function () {
+  $("form").submit(function (event) {
+    event.preventDefault(); //stops the page from refreshing
     let todoText = $("#newTodo").val().trim();
     if (todoText !== "") {
       let todoItem = `<li class="list-group-item d-flex justify-content-between align-items-center">
