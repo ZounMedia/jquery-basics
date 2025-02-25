@@ -20,13 +20,13 @@ outerFunction(); // Output: "I'm outside!"
 // outerFunction(); // Output: "I'm outside!"
 
 /**Explanation:
- * The innerFunction is defined inside outerFunction and can access the letiable outerlet even though outerlet is declared in the outer function.
+ * The innerFunction is defined inside outerFunction and can access the outerlet variable even though outerlet is declared in the outer function.
  * This is a basic example of a closure.
  * */
 
 //2. Returning a Function to Create a Closure
 /**
- * In this example, the outer function returns the inner function, which retains access to the outer function’s letiables even after the outer function has finished executing.
+ * In this example, the outer function returns the inner function, which retains access to the outer function’s variable even after the outer function has finished executing.
  * */
 function createClosure() {
   let message = "Hello, Closure!";
@@ -41,7 +41,7 @@ let myClosure = createClosure();
 // myClosure(); // Output: "Hello, Closure!"
 
 /**Explanation
- * createClosure returns a function that accesses the message letiable. Even after createClosure has completed, the returned function retains access to message due to closure.
+ * createClosure returns a function that accesses the message variable. Even after createClosure has completed, the returned function retains access to message due to closure.
  */
 
 //3. Closures with Parameters
@@ -62,37 +62,7 @@ let greetJane = greet("Jane");
  * The greet function takes a name parameter and returns a function that uses that name. The returned function forms a closure that "remembers" the value of name passed when the outer function was called.
  */
 
-//4. Closures in Loops
-/**
- * Closures are often used in loops to create functions that remember specific values from each iteration.
- * Without closures, the loop might result in unexpected behavior.
- */
-
-function createCounters() {
-  let counters = [];
-
-  for (let i = 0; i < 3; i++) {
-    counters[i] = (function (x) {
-      return function () {
-        console.log(x); // 'x' is captured in the closure
-      };
-    })(i); // Passing 'i' as 'x'
-  }
-
-  return counters;
-}
-
-let myCounters = createCounters();
-// myCounters[0](); // Output: 0
-// myCounters[1](); // Output: 1
-// myCounters[2](); // Output: 2
-
-/** Explanation
- * In this example, the loop creates three functions, each capturing the value of i at that particular iteration.
- * By using an immediately invoked function expression (IIFE), the current value of i is passed to x and captured in a closure, ensuring each function remembers its specific value.
- */
-
-//5.  Advanced Closure Example: Private Variables
+//4.  Advanced Closure Example: Private Variables
 /**
  * Closures can be used to create private letiables that can only be accessed or modified by specific functions
  */
@@ -117,8 +87,9 @@ function createCounter() {
 let counter = createCounter();
 // counter.increment(); // Output: 1
 // counter.increment(); // Output: 2
-// counter.decrement(); // Output: 1
-// console.log(counter.getCount()); // Output: 1
+// counter.increment(); //Output: 3
+// counter.decrement(); // Output: 2
+// console.log(counter.getCount()); // Output: 2
 
 /** Explanation
  * In this example, createCounter returns an object with methods that can access and modify the count variable.
