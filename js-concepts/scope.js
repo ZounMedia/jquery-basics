@@ -29,8 +29,10 @@ showGlobalVar(); // Output: "I'm a global variable"
 
 //Example
 function showLocalVar() {
+  // let globalVar = "I'm not really a global var, I'm local to showLocalVar";
   let localVar = "I'm a local variable";
   console.log("localVar called with function:", localVar); // Accessible here
+  // console.log("globalVar called with function:", globalVar); // The JS engine will look up the scope chain until it finds the variable or errors out
 }
 
 // showLocalVar(); // Output: "I'm a local variable"
